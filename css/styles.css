@@ -1,0 +1,403 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+section {
+  width: 100%;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+svg {
+  overflow: hidden;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+button {
+  margin: unset;
+  padding: unset;
+  border: unset;
+  border-radius: unset;
+  background-color: unset;
+}
+
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+:root {
+  /* Fonts */
+  --main-font-family: "Poppins", sans-serif;
+  /* Colors */
+  --main-color: #333333;
+  --secondary-color: #9c9c9c;
+  --alt-color: #ffffff;
+  --bg-color: #2c3878;
+  --border-color: #3c3c3c;
+  /* Global */
+}
+body {
+  font-family: var(--main-font-family);
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  max-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+.section-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 61.2px;
+}
+.main-description {
+  color: var(--main-color);
+  text-align: center;
+}
+.main-logo {
+  width: 126px;
+  height: 54px;
+  top: 40px;
+  left: 120px;
+}
+button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.ceo-info .name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+}
+.ceo-info .position {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: var(--secondary-color);
+}
+.section-subject {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.section-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.6px;
+}
+.content-description {
+  color: var(--secondary-color);
+}
+.contact-promo {
+  margin-bottom: 80px;
+  background-color: var(--bg-color);
+}
+.contact-promo p {
+  margin-bottom: 20px;
+}
+.contact-promo h2 {
+  color: var(--alt-color);
+}
+.main-footer .footer-logo {
+  margin-bottom: 12px;
+}
+/* Header */
+.main-header {
+  padding: 40px;
+  margin-bottom: 97px;
+}
+.nav-list a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: var(--main-color);
+}
+.nav-list a.active {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.4px;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav .main-logo {
+  margin-right: auto;
+}
+.site-nav .nav-list {
+  display: flex;
+  column-gap: 74px;
+  margin-right: 74px;
+}
+.site-nav .button {
+  padding: 14px 32px;
+  color: var(--alt-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+}
+
+/* Project Info */
+.project-info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
+.project-info span {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 83.2px;
+}
+.section-item {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44.8px;
+}
+
+/* Section Why Us (about us, our teams, portfolio) */
+.why-us {
+  margin-bottom: 100px;
+}
+.why-us li {
+  text-align: center;
+}
+.why-us .section-title {
+  margin-bottom: 25px;
+}
+.why-us .main-content-description {
+  margin-bottom: 40px;
+}
+.why-us-img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.why-us .content-description {
+  margin-bottom: 20px;
+}
+.why-us .section-subtitle {
+  margin-bottom: 20px;
+}
+.why-us-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+}
+
+/* Hero */
+.hero .main-title {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 100.8px;
+  margin-bottom: 46px;
+}
+.hero .main-heading {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 78.4px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.hero .main-description {
+  margin-bottom: 57px;
+}
+.hero .copyright {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+/* Home Hero */
+.home-hero {
+  margin-bottom: 160px;
+}
+.hero {
+  margin-bottom: 112px;
+}
+/* Home */
+.about-us {
+  margin-bottom: 160px;
+}
+.about-us .section-title {
+  margin-bottom: 60px;
+}
+.service {
+  margin-bottom: 160px;
+}
+.service .section-title {
+  margin-bottom: 24px;
+}
+.service .content-description {
+  margin-bottom: 40px;
+}
+.service .section-subtitle {
+  margin-bottom: 35px;
+}
+.product {
+  margin-bottom: 163px;
+}
+.product .section-title {
+  margin-bottom: 73px;
+}
+.product .product-themes h3 {
+  margin-bottom: 24px;
+}
+.product .product-themes p {
+  margin-bottom: 43px;
+}
+.material {
+  margin-bottom: 120px;
+}
+.material .section-title {
+  margin-bottom: 10px;
+}
+.material .content-description {
+  margin-bottom: 23px;
+}
+/* Abous Us */
+.customization {
+  margin-bottom: 112px;
+}
+
+/* Services */
+.customization-features {
+  margin-bottom: 100px;
+}
+.customization-features-item {
+  margin-bottom: 40px;
+}
+.customization-features-item .section-subtitle {
+  margin-bottom: 20px;
+}
+/* Contact Us */
+.contact-form .label-form {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+/* Our Teams */
+.designer .designer-name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.6px;
+}
+.designer .designer-position {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: var(--secondary-color);
+}
+.designer-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* св-во для выравнивания элементов по основной направляющей flex */
+.example {
+  display: flex;
+  justify-content: space-between;
+}
